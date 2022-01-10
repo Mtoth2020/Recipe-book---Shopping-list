@@ -8,8 +8,14 @@
         style="cursor: pointer"
         *ngFor="let ingredient of ingredients"
       >
-        {{ ingredient.name }} ({{ ingredient.amount}}
+        {{ ingredient.name }} {{ ingredient.amount}}
       </a>
     </ul>
   </div>
 </div>
+
+<!--
+need to remove the listener, where we listen our event
+<app-shopping-edit
+  (ingredientAdded)="onIngredientAdded($event)"
+></app-shopping-edit>-->
