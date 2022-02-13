@@ -1,13 +1,13 @@
 import { Directive, HostListener, HostBinding } from '@angular/core';
 
 @Directive({
-  selector: '[appDropdown]'
+  selector: '[appHeader]'
 })
-export class DropdownDirective {
+export class HeaderDirective {
   @HostBinding('style.backgroundColor') backgroundColor: string = 'transparent';
 
   @HostListener('mouseenter') mouseover (eventData: Event) {
-    this.backgroundColor = '#F08080';
+    this.backgroundColor = '#A9A9A9';
   }
 
   @HostListener('mouseleave') mouseleave(eventData: Event) {

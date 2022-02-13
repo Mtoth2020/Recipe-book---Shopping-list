@@ -3,8 +3,8 @@
     <a href="#" class="navbar-brand">Recipe book</a>
     <div class="collapse navbar-collapse">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link active" href="#" (click)="onSelect('recipe')">Recipes</a></li>
-        <li class="nav-item"><a class="nav-link active" href="#" (click)="onSelect('shopping-list')">Shopping List</a></li>
+        <li appHeader routerLinkActive="active" class="nav-item"><a class="nav-link" routerLink="/recipes" >Recipes</a></li>
+        <li appHeader routerLinkActive="active" class="nav-item"><a class="nav-link" routerLink="/shopping-list">Shopping List</a></li>
       </ul>
 
       <ul class="nav navbar-nav">
@@ -12,18 +12,17 @@
           <a
             class="btn btn-secondary"
             ngbDropdownToggle
-            href="#"
+            style="cursor: pointer"
             type="button"
             aria-expanded="false"
             id="manageButton"
           >Manage</a>
           <ul ngbDropdownMenu aria-labelledby="manageButton">
-            <li><a ngbDropdownItem href="#">Saving Data</a></li>
-            <li><a ngbDropdownItem href="#">Fetching Data</a></li>
+            <li><a ngbDropdownItem style="cursor: pointer">Saving Data</a></li>
+            <li><a ngbDropdownItem style="cursor: pointer">Fetching Data</a></li>
           </ul>
         </li>
       </ul>
-
     </div>
   </div>
 </nav>

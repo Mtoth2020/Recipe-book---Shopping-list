@@ -7,7 +7,7 @@ export class DropdownDirective {
   @HostBinding('style.backgroundColor') backgroundColor: string = 'transparent';
 
   @HostListener('mouseenter') mouseover (eventData: Event) {
-    this.backgroundColor = '#F08080';
+    this.backgroundColor = '#FAF0E6';
   }
 
   @HostListener('mouseleave') mouseleave(eventData: Event) {
