@@ -36,7 +36,11 @@ export class RecipeService {
   constructor(private shoppingListService: ShoppingListService) {}
 
   getRecipes() {
-    return this.recipes.slice(); // copy of ingredients array, I can't access to the original array, which stored in the service
+    return this.recipes.slice();
+  }
+
+  getRecipe(index: number) {
+    return this.recipes[index];
   }
 
   addIngredientsToShoppingList(ingredients: Ingredient[] | []) {
